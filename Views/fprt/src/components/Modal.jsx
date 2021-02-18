@@ -52,7 +52,7 @@ class Modal extends Component {
             if(c==t.length)
             {
                 var l=ap[i].start_time.length
-                arr.push("Start-Time"+ap[i].start_time.slice(l-7,l+1)+"   "+"End-Time"+ap[i].start_time.slice(l-7,l+1))
+                arr.push("Start-Time"+ap[i].start_time.slice(l-7,l+1)+"   "+"End-Time"+ap[i].end_time.slice(l-7,l+1))
             }
         }
          console.log(arr)
@@ -87,7 +87,7 @@ class Modal extends Component {
             if(c==t.length)
             {
                 var l=ap[i].start_time.length
-                arr.push("Start-Time"+ap[i].start_time.slice(l-7,l+1)+"   "+"End-Time"+ap[i].start_time.slice(l-7,l+1))
+                arr.push("Start-Time"+ap[i].start_time.slice(l-7,l+1)+"   "+"End-Time"+ap[i].end_time.slice(l-8,l+1))
 
             }
         }
