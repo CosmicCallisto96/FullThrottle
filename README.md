@@ -1,6 +1,7 @@
 # FullThrottle
 ##Deplyed Link :https://ftlapptime1.herokuapp.com/
-To run the application locally follow the steps mentioned below
+To run the application locally follow the steps mentioned below:
+```
 1)clone the repo and cd into the repo
 2)In the mongodb database create a database with the name ft or include a .env file and add the Mongo_DB_URl which could be your local mongodb url or atlas
 4) type npm install into the terminal
@@ -11,3 +12,4 @@ To run the application locally follow the steps mentioned below
 9) visit url http://localhost:4000/api/member/ to check if the api is working or not
 10) At http://localhost:3000 the react app will run on your browser
 11) check out the data.js file to know the activity period of the users
+```
