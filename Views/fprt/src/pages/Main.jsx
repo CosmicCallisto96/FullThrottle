@@ -8,7 +8,19 @@ class Main extends Component {
     }
     componentDidMount()
     {
-        axios.get('http://localhost:4000/api/member').then(res=>this.setState({data:[res.data]}))
+        const sendGetRequest = async () => {
+            try {
+                const resp = await axios.get('/api/member');
+                this.setState({data:[resp.data]})
+                console.log(resp.data);
+            } catch (err) {
+                // Handle Error Here
+                console.error(err);
+            }
+        };
+        
+        sendGetRequest();
+        // axios.get('/api/member').then(res=>this.setState({data:[res.data]})).catch((err)=>console.log(err))
     }
     render() { 
         console.log(this.state.data)
